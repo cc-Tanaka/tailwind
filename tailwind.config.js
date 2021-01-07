@@ -7,7 +7,12 @@ module.exports = {
     content: ["./src/**/*.vue"],
   },
   theme: {
-    extend: {},
+    //extendで追加できる
+    extend: {
+      colors: {
+        'main-color': '#F0A747'
+      }
+    }
   },
   variants: {},
   plugins: [],

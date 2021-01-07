@@ -37,7 +37,7 @@ export default {
 
 <style>
 .cvLink {
-  @apply text-xs font-bold text-white bg-yellow-400 py-3.5 px-8 rounded-full md:text-sm;
+  @apply text-xs font-bold text-white bg-main-color py-3.5 px-8 rounded-full md:text-sm;
 }
 
 
