@@ -19,8 +19,8 @@
         <li class="pr-4	mr-4 border-r border-black"><a class="cursor-pointer hover:opacity-60">3つの強み</a></li>
         <li><a class="cursor-pointer hover:opacity-60">よくある質問</a></li>
       </ul>
-      <div class="inline-block ml-10 hidden md:block">
-        <a class="text-sm font-bold text-white bg-yellow-400 py-3.5 px-8 rounded-full">査定を申し込む</a>
+      <div class="inline-block ml-10 block">
+        <a class="cvLink">査定を申し込む</a>
       </div>
     </div>
 
@@ -36,6 +36,11 @@ export default {
 </script>
 
 <style>
+.cvLink {
+  @apply text-xs font-bold text-white bg-yellow-400 py-3.5 px-8 rounded-full md:text-sm;
+}
+
+
 .header {
   display: flex;
   justify-content: center;
@@ -78,8 +83,8 @@ export default {
 }
 
 @media only screen and (max-width: 767px) {
-  .header__cv-button-wrap {
-    display: none;
+  .header__cv-button {
+    font-size: 12px;
   }
 }
 
