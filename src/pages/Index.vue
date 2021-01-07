@@ -15,9 +15,9 @@
 
     <div class="h-20 flex justify-center items-center">
       <ul class="inline-flex justify-center items-center">
-        <li class="pr-4	mr-4 border-r border-black"><a>査定の流れ</a></li>
-        <li class="pr-4	mr-4 border-r border-black"><a>3つの強み</a></li>
-        <li><a>よくある質問</a></li>
+        <li class="pr-4	mr-4 border-r border-black"><a class="cursor-pointer hover:opacity-60">査定の流れ</a></li>
+        <li class="pr-4	mr-4 border-r border-black"><a class="cursor-pointer hover:opacity-60">3つの強み</a></li>
+        <li><a class="cursor-pointer hover:opacity-60">よくある質問</a></li>
       </ul>
       <div class="inline-block ml-10 hidden md:block">
         <a class="text-sm font-bold text-white bg-yellow-400 py-3.5 px-8 rounded-full">査定を申し込む</a>
@@ -47,6 +47,14 @@ export default {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+.header__nav-link {
+  cursor: pointer;
+}
+
+.header__nav-link:hover {
+  opacity: 0.6;
 }
 
 .header__nav-item:not(:last-child) {
