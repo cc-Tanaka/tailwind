@@ -19,7 +19,7 @@
         <li class="pr-4	mr-4 border-r border-black"><a>3つの強み</a></li>
         <li><a>よくある質問</a></li>
       </ul>
-      <div class="inline-block ml-10">
+      <div class="inline-block ml-10 hidden md:block">
         <a class="text-sm font-bold text-white bg-yellow-400 py-3.5 px-8 rounded-full">査定を申し込む</a>
       </div>
     </div>
@@ -67,6 +67,12 @@ export default {
   background-color: #F0A747;
   padding: 12px 32px;
   border-radius: 100px;
+}
+
+@media only screen and (max-width: 767px) {
+  .header__cv-button-wrap {
+    display: none;
+  }
 }
 
 </style>
