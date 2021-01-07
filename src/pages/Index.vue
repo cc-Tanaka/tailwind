@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h1>Hello, Tailwind!</h1>
+    <h1 class="font-semibold">Hello, Tailwind!</h1>
   </Layout>
 </template>
 

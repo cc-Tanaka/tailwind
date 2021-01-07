@@ -6,5 +6,12 @@
 
 module.exports = {
   siteName: 'Gridsome',
-  plugins: []
-}
+  plugins: [],
+  css: {
+    loaderOptions: {
+      postcss: {
+        plugins: [require('tailwindcss')],
+      },
+    },
+  },
+};
