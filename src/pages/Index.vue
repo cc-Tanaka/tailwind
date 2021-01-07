@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h1 class="font-semibold">Hello, Tailwind!</h1>
+    <h1 class="font-semibold text-center">Hello, Tailwind!</h1>
 
     <div class="header">
       <ul class="header__nav">
