@@ -27,19 +27,10 @@
   </Layout>
 </template>
 
-<script>
-export default {
-  metaInfo: {
-    title: 'Hello Tailwind'
-  }
-}
-</script>
-
 <style>
 .cvLink {
   @apply text-xs font-bold text-white bg-main-color py-3.5 px-8 rounded-full md:text-sm;
 }
-
 
 .header {
   display: flex;
