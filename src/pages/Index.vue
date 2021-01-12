@@ -4,9 +4,15 @@
 
     <div class="header">
       <ul class="header__nav">
-        <li class="header__nav-item"><a class="header__nav-link">査定の流れ</a></li>
-        <li class="header__nav-item"><a class="header__nav-link">3つの強み</a></li>
-        <li class="header__nav-item"><a class="header__nav-link">よくある質問</a></li>
+        <li class="header__nav-item">
+          <a class="header__nav-link">査定の流れ</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link">3つの強み</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link">よくある質問</a>
+        </li>
       </ul>
       <div class="header__cv-button-wrap">
         <a class="header__cv-button">査定を申し込む</a>
@@ -15,21 +21,24 @@
 
     <div class="h-20 flex justify-center items-center">
       <ul class="inline-flex justify-center items-center">
-        <li class="pr-4	mr-4 border-r border-black"><a class="cursor-pointer hover:opacity-60">査定の流れ</a></li>
-        <li class="pr-4	mr-4 border-r border-black"><a class="cursor-pointer hover:opacity-60">3つの強み</a></li>
+        <li class="pr-4 border-r border-black mr-4">
+          <a class="cursor-pointer hover:opacity-60">査定の流れ</a>
+        </li>
+        <li class="pr-4 mr-4 border-r border-black">
+          <a class="cursor-pointer hover:opacity-60">3つの強み</a>
+        </li>
         <li><a class="cursor-pointer hover:opacity-60">よくある質問</a></li>
       </ul>
-      <div class="inline-block ml-10 block">
+      <div class="ml-10 block">
         <a class="cvLink">査定を申し込む</a>
       </div>
     </div>
-
   </Layout>
 </template>
 
 <style>
 .cvLink {
-  @apply text-xs font-bold text-white bg-main-color py-3.5 px-8 rounded-full md:text-sm;
+  @apply px-8 py-3.5 text-white text-xs font-bold bg-main-color rounded-full md:text-sm;
 }
 
 .header {
@@ -68,7 +77,7 @@
   font-size: 14px;
   font-weight: bold;
   color: white;
-  background-color: #F0A747;
+  background-color: #f0a747;
   padding: 12px 32px;
   border-radius: 100px;
 }
@@ -78,5 +87,4 @@
     font-size: 12px;
   }
 }
-
 </style>

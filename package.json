@@ -4,12 +4,15 @@
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "prittier": "prettier --write src/pages/Index.vue"
   },
   "dependencies": {
     "autoprefixer": "^9",
     "gridsome": "^0.7.0",
     "postcss": "^7",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "prettier": "^2.2.1",
+    "prettier-plugin-tailwind": "^2.2.8"
   }
 }
