@@ -1,4 +1,4 @@
-name: Trigger Netlify Build
+name: Test Netlify Build
 
 on: push
 
@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Hello World
-        run: echo "Hello World"
+        run: curl -X POST -d {} https://api.netlify.com/build_hooks/5fff8f89314dfb8e32ae72de
