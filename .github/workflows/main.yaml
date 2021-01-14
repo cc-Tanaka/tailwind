@@ -1,0 +1,17 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Trigger Netlify Build
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  schedule:
+    - cron: '40 * * * *'
+
+jobs:
+  build:
+    name: Request Netlify Webhook
+    runs-on: ubuntu-latest
+    steps:
+      - name: Curl request
+        run: curl -X POST -d {} https://api.netlify.com/build_hooks/5fff8f89314dfb8e32ae72de
