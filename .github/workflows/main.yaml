@@ -1,11 +1,13 @@
-name: Test Netlify Build
+name: Netlify Build
 
-on: push
+on:
+  schedule:
+    - cron: '0 * * * *'
 
 jobs:
   build:
-    name: Greeting
-    runs-on: ubuntu-18.04
+    name: Request Build
+    runs-on: ubuntu-latest
     steps:
-      - name: Hello World
+      - name: Build
         run: curl -X POST -d {} https://api.netlify.com/build_hooks/5fff8f89314dfb8e32ae72de
