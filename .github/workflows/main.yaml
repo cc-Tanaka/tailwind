@@ -2,7 +2,7 @@ name: Netlify Build
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '10 * * * *'
 
 jobs:
   build:
@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build
-        run: curl -X POST -d {} https://api.netlify.com/build_hooks/5fff8f89314dfb8e32ae72de
+        run: curl -X POST -d {} ${{ secrets.WEBHOOK_URL }}
