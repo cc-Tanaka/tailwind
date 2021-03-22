@@ -1,0 +1,21 @@
+[build]
+  publish = "dist/"
+
+[context.production]
+  command = "yarn build"
+
+[context.deploy-preview]
+  command = "yarn build"
+
+[context.branch-deploy]
+  command = "yarn build"
+
+[[redirects]]
+  from = "/"
+  to = "https://ishikawa.rakusate.com/"
+  status = 301
+
+[[redirects]]
+  from = "/*"
+  to = "https://ishikawa.rakusate.com/"
+  status = 301
