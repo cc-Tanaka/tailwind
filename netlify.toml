@@ -11,7 +11,7 @@
   command = "yarn build"
 
 [[redirects]]
-  from = "https://inspiring-colden-9b53a0.netlify.app/"
+  from = "/"
   to = "https://ishikawa.rakusate.com/"
   status = 301
   force = true
