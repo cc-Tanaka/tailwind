@@ -16,6 +16,11 @@
   status = 301
 
 [[redirects]]
+  from = "/"
+  to = "https://ishikawa.rakusate.com/"
+  status = 301
+
+[[redirects]]
   from = "/*"
   to = "https://ishikawa.rakusate.com/"
   status = 301
