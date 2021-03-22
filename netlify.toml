@@ -11,7 +11,7 @@
   command = "yarn build"
 
 [[redirects]]
-  from = "/asd"
+  from = "/*"
   to = "https://ishikawa.rakusate.com/"
   status = 301
   force = true
